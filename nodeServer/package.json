@@ -9,6 +9,7 @@
   "author": "Arpit",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "socket.io": "^4.4.0"
   }
 }
