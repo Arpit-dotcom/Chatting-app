@@ -3,6 +3,15 @@ body{
     height: 100vh;
 }
 
+#nav-image{
+    margin: auto;
+    display: block;
+}
+#nav-para{
+    margin: 1px;
+    text-align: center;
+    font-size: 30px;
+}
 .container{
     max-width: 900px;
     border: 2px solid black;
