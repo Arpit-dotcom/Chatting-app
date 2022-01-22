@@ -91,10 +91,10 @@ nav .img3{
     margin: .5rem 0rem;
     position: relative;
 }
-.btn1{
-    position: fixed;
+.send a img{
+    position: absolute;
     right: 18.5rem;
-    bottom: 2rem;
+    bottom: 2.5rem;
 }
 .btn2{
     cursor: pointer;
