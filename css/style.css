@@ -1,59 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --color: #cbd5e1;
+}
 body{
-    background-image: linear-gradient(white,rgb(226, 48, 226));
-    height: 100vh;
+    margin: auto;
+    max-height: 100vh;
+    max-width: 70%;
+    font-size: 62.5%;
+    background-color: #e2e8f0;
 }
 
-#nav-image{
-    margin: auto;
-    display: block;
+/* Navigation */
+nav{
+    background-color: green;
+    height: 10vh;
+    border-radius: .4rem .4rem 0rem 0rem;
+    padding: .9rem;
+    position: relative;
 }
-#nav-para{
-    margin: 1px;
-    text-align: center;
-    font-size: 30px;
+nav .img1{
+    display: inline-block;
+    position: absolute;
+    left: .5rem;
 }
+nav h1{
+    font-size: 1.3rem;
+    display: inline-block;
+    position: absolute;
+    left: 3rem;
+}
+nav .img2{
+    display: inline-block;
+    position: absolute;
+    right: 3rem;
+}
+nav .img3{
+    display: inline-block;
+    position: absolute;
+    right: .5rem;
+}
+/* Container */
 .container{
-    max-width: 900px;
-    border: 2px solid black;
+    max-width: 90rem;
+    background-color: white;
+    border: .2rem solid var(--color);
     margin: auto;
-    height: 70vh;
-    padding: 13px;
+    height: 75vh;
+    padding: 1.3rem;
     overflow-y: scroll;
 }
+/* Message Input*/
 .message{
     background-color: white;
-    width: 250px;
-    padding: 10px;
-    margin: 10px 5px;
-    border: 1px solid black;
-    border-radius: 5px;
+    width: 25rem;
+    padding: 1rem;
+    margin: 1rem .5rem;
+    border: none;
+    border-radius: .5rem;
 }
 .left{
+    background-color: var(--color);
+    color: black;
+    font-size: medium;
     float:left;
     clear: both;
 }
 .right{
+    background-color: green;
+    color: white;
+    font-size: medium;
     float: right;
     clear: both;
 }
+/* Send message */
 #send-container{
     text-align: center;
-    max-width: 850px;
+    max-width: 85rem;
     display: block;
     margin: auto;
 }
 #messageInp{
     width: 87%;
-    border: 2px solid black;
-    border-radius: 4px;
-    height: 30px;
-    margin: 5px 0;
+    border: .2rem solid var(--color);
+    border-radius: .4rem;
+    height: 3rem;
+    margin: .5rem 0rem;
+    position: relative;
 }
-.btn{
+.btn1{
+    position: fixed;
+    right: 18.5rem;
+    bottom: 2rem;
+}
+.btn2{
     cursor: pointer;
-    height: 30px;
-    border: 2px solid black;
+    height: 3rem;
+    color: #64748b;
+    background-color: white;
+    border: .2rem solid var(--color);
     width: 10%;
-    border-radius: 4px;
-    margin: 5px 0;
+    border-radius: .4rem;
+    margin: .5rem 0rem;
+}
+
+@media only screen and (max-width:998px){
+    body{
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width:762px){
+    body{
+        font-size: 75%;
+    }
 }
